@@ -36,8 +36,5 @@ This project is a simple URL Shortener web application built using React. The ma
 ## Notes
 - This is a frontend-only demo. There is no backend or database.
 - All data is stored in memory and will reset on page reload.
-.
 
----
-Feel free to explore, modify, and learn from the code!
 
