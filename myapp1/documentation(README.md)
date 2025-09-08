@@ -1,0 +1,43 @@
+# Project Notes: URL Shortener React App
+
+## Overview
+This project is a simple URL Shortener web application built using React. The main goal is to allow users to shorten long URLs, view a list of shortened URLs, and track basic statistics like redirects and clicks. 
+
+## Main Features
+- **URL Shortening:** Users can enter a long URL and get a short version.
+- **URL List:** Displays all shortened URLs for easy access.
+- **Redirect Handling:** When a user visits a short URL, the app redirects them to the original URL and logs the event.
+- **Statistics:** Basic stats like number of redirects and clicks are tracked and shown.
+- **Logging:** All important actions (shortening, redirecting, clicking) are logged using a custom logger utility, now located in `src/middleware/logger.js`.
+
+## Folder Structure
+- `src/components/` — Contains all React components (forms, lists, handlers, etc.)
+- `src/middleware/` — Contains logging utilities and middleware code
+- `public/` — Static files and assets
+
+## How It Works
+- The user enters a URL in the form and clicks 'Shorten'.
+- The app generates a short code and displays it in the list.
+- When a short URL is visited, the app finds the original URL and redirects the user.
+- Every time a URL is shortened, redirected, or clicked, a log entry is created (visible in the browser console).
+
+## Logging Middleware
+- The logger was moved to `src/middleware/logger.js` for better organization.
+- All logging functions (shorten, redirect, click) are imported from this file in the components.
+
+## How to Run
+1. Install dependencies: `npm install`
+2. Start the app: `npm start`
+3. Open your browser at `http://localhost:3000`
+
+## GitHub
+- The project is pushed to: https://github.com/vishwajitha28/B22AI054
+
+## Notes
+- This is a frontend-only demo. There is no backend or database.
+- All data is stored in memory and will reset on page reload.
+.
+
+---
+Feel free to explore, modify, and learn from the code!
+
